@@ -4,27 +4,30 @@ Created on Thu Oct 10 18:14:31 2019
 
 @author: inder
 """
-
+        
+            
 from turtle import*
 from random import randint
 for i in range(10):
-  write(i,align='center')
-  right(90)
-  forward(10)
-  pendown()
-  forward(180)
-  penup()
-  backward(190)
-  left(90)
-  forward(20)
+    write(i+1)
+    right(90)
+  
+    for j in range(0,100,10):
+        pendown()
+        forward(10)
+        penup()
+        forward(10)
+    penup()
+    backward(200)
+    left(90)
+    forward(20)
 
-
-ada=Turtle()
-ada.color('red')
-ada.shape('turtle')
-ada.penup()
-ada.goto(-25,-25)
-ada.pendown()
+anna=Turtle()
+anna.color('red')
+anna.shape('turtle')
+anna.penup()
+anna.goto(-25,-25)
+anna.pendown()
 
   
 bob=Turtle()
@@ -57,7 +60,7 @@ lily.goto(-25,-85)
 lily.pendown()
 
 for turn in range(80):
-  ada.forward(randint(1,5))
+  anna.forward(randint(1,5))
   bob.forward(randint(1,5))
   tom.forward(randint(1,5))
   sam.forward(randint(1,5))
